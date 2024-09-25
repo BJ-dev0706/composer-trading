@@ -7,7 +7,7 @@ const Header = () => {
                     <img src="/logo-nav.png" className="w-[22px]" alt="Composer Logo" />
                 </a>
                 <div className="hidden sm:flex space-x-1">
-                    <a className="leading-none select-none cursor-pointer text-center rounded-full px-2 py-1 outline-none transition focus-visible:ring-2 focus-visible:ring-action-soft hover:bg-dark/10 focus:bg-dark/10" href="/portfolio">
+                    <a className="leading-none select-none cursor-pointer text-center rounded-full px-2 py-1 outline-none transition focus-visible:ring-2 focus-visible:ring-action-soft hover:bg-slate-300 focus:bg-slate-300" href="/portfolio">
                         <div className="flex space-x-1.5 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
                                 <rect width="256" height="256" fill="none"></rect><line x1="128" y1="72" x2="128" y2="88" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></line>
@@ -18,7 +18,7 @@ const Header = () => {
                             <span>Portfolio</span>
                         </div>
                     </a>
-                    <a className="leading-none select-none cursor-pointer text-center rounded-full px-2 py-1 outline-none transition focus-visible:ring-2 focus-visible:ring-action-soft hover:bg-dark/10 focus:bg-dark/10" href="/watch">
+                    <a className="leading-none select-none cursor-pointer text-center rounded-full px-2 py-1 outline-none transition focus-visible:ring-2 focus-visible:ring-action-soft hover:bg-slate-300 focus:bg-slate-300" href="/watch">
                         <div className="flex space-x-1.5 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
                                 <rect width="256" height="256" fill="none"></rect>
@@ -29,7 +29,7 @@ const Header = () => {
                             <span>Watchlist</span>
                         </div>
                     </a>
-                    <a className="leading-none select-none cursor-pointer text-center rounded-full px-2 py-1 outline-none transition focus-visible:ring-2 focus-visible:ring-action-soft hover:bg-dark/10 focus:bg-dark/10" href="/discover">
+                    <a className="leading-none select-none cursor-pointer text-center rounded-full px-2 py-1 outline-none transition focus-visible:ring-2 focus-visible:ring-action-soft hover:bg-slate-300 focus:bg-slate-300" href="/discover">
                         <div className="flex space-x-1.5 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
                                 <rect width="256" height="256" fill="none"></rect>
@@ -41,13 +41,27 @@ const Header = () => {
                         </div>
                     </a>
                     <div className="leading-none flex">
-                        <div className="relative group bg-black rounded-l-full text-white hover:!text-light">
-                            <div className="text-center outline-none transition bg-dark text-light-soft group-hover:!text-light rounded-l-full">
-                                <button className="select-none focus:outline-none rounded-full focus-visible:ring-2 focus-visible:ring-action-soft" disabled=""><div className="px-2 py-1 flex items-center justify-between space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M220,175.3V80.7a8.1,8.1,0,0,0-4.1-7l-84-47.5a7.8,7.8,0,0,0-7.8,0l-84,47.5a8.1,8.1,0,0,0-4.1,7v94.6a8.1,8.1,0,0,0,4.1,7l84,47.5a7.8,7.8,0,0,0,7.8,0l84-47.5A8.1,8.1,0,0,0,220,175.3Z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path><circle cx="128" cy="128" r="36" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></circle></svg><span>Create</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></polyline></svg></div></button></div>
+                        <div className="relative group rounded-l-full text-[#ecedeeb3] hover:!text-light">
+                            <div className="text-center outline-none transition bg-black text-light-soft group-hover:!text-[#fff] rounded-l-full flex items-center justify-center">
+                                <button className="select-none focus:outline-none rounded-full focus-visible:ring-2 focus-visible:ring-action-soft" disabled="">
+                                    <div className="px-2 py-1 flex items-center justify-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                                            <rect width="256" height="256" fill="none"></rect>
+                                            <path d="M220,175.3V80.7a8.1,8.1,0,0,0-4.1-7l-84-47.5a7.8,7.8,0,0,0-7.8,0l-84,47.5a8.1,8.1,0,0,0-4.1,7v94.6a8.1,8.1,0,0,0,4.1,7l84,47.5a7.8,7.8,0,0,0,7.8,0l84-47.5A8.1,8.1,0,0,0,220,175.3Z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
+                                            <circle cx="128" cy="128" r="36" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></circle>
+                                        </svg>
+                                        <span>Create</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                                            <rect width="256" height="256" fill="none"></rect>
+                                            <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></polyline>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
                             <div className="pt-1 absolute cursor-pointer">
-                                <div className="dd-fadein-down w-60 bg-white border border-modal-border shadow-sm rounded-md hidden z-1 group-hover:flex">
+                                <div className="dd-fadein-down w-60 bg-white border-[1px] border-black shadow-sm rounded-md hidden z-1 group-hover:flex">
                                     <div className="w-full">
-                                        <button className="select-none w-full p-2 gap-x-1 rounded-t-md flex items-center transition hover:bg-tab-dark focus:bg-tab-dark outline-none leading-none">
+                                        <button className="select-none text-black w-full p-2 gap-x-1 rounded-t-md flex items-center transition hover:bg-gray-500 hover:text-white focus:bg-gray-500 outline-none leading-none">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
                                                 <rect width="256" height="256" fill="none"></rect>
                                                 <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></line>
@@ -55,7 +69,7 @@ const Header = () => {
                                             </svg>
                                             New Symphony
                                         </button>
-                                        <a href="/drafts" className="select-none w-full p-2 gap-x-1 rounded-b-md flex items-center transition hover:bg-tab-dark focus:bg-tab-dark outline-none leading-none">
+                                        <a href="/drafts" className="select-none text-black w-full p-2 gap-x-1 rounded-b-md flex items-center transition hover:bg-gray-500 hover:text-white focus:bg-gray-500 outline-none leading-none">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
                                                 <rect width="256" height="256" fill="none"></rect>
                                                 <path d="M72,224H56a8,8,0,0,1-8-8V184" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
@@ -71,10 +85,11 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center px-2 py-1 border-l text-white bg-black bg-dark text-light rounded-r-full">
+                        <div className="flex items-center justify-center px-2 py-1 border-l text-white bg-black text-light rounded-r-full">
                             <button className="focus:outline-none focus-visible:ring-2 focus-visible:ring-action-soft">Editor</button>
                             <span className="mx-1 text-xs text-light-soft cursor-default">•</span>
-                            <button className="focus:outline-none focus-visible:ring-2 focus-visible:ring-action-soft">Backtest</button></div>
+                            <button className="focus:outline-none focus-visible:ring-2 focus-visible:ring-action-soft">Backtest</button>
+                        </div>
                     </div>
                 </div>
                 <div className="sm:hidden transition opacity-100">
@@ -99,7 +114,7 @@ const Header = () => {
                     </div>
                 </span>
                 <div className="flex items-center gap-2 shrink-0">
-                    <button type="button" className="button btn-base-js gap-x-1.5 transition bg-action border border-action-dark text-white shadow-sm shadow-action-dark/20 disabled:bg-action/75 disabled:shadow-dark/10 hover:border-action-dark hover:bg-action-dark active:shadow-none justify-center rounded-full py-1 px-2 hidden sm:flex shrink-0"
+                    <button type="button" className="button btn-base-js gap-x-1 transition bg-action border border-black text-white shadow-sm shadow-action-dark/20 disabled:bg-action/75 disabled:shadow-slate-300 hover:bg-action-dark active:shadow-none items-center justify-center rounded-full px-2 hidden sm:flex shrink-0"
                         aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:raf:" data-state="closed">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true" focusable="false" className="inline-flex items-center shrink-0">
                             <rect width="256" height="256" fill="none"></rect>
@@ -109,26 +124,56 @@ const Header = () => {
                             <path d="M22.2,200a112,112,0,0,1,171.6,0" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
                         </svg>
                         <span>
+                            Invite 
                             <span className="hidden md:inline"> friends</span>
                         </span>
                     </button>
-                    <button type="button" id="profile-menu-button" aria-haspopup="menu" data-state="closed" aria-label="User Menu" className="rdx-state-open:bg-dark/10 flex items-center rounded-full px-1 py-1 cursor-pointer outline-none min-w-max transition hover:bg-dark/10 focus:bg-dark/10 duration-300 select-none hidden sm:flex focus:outline-none focus-visible:ring-2 focus-visible:ring-action-soft">
-                        <span className="inline-flex items-center justify-center overflow-hidden align-middle select-none w-6 h-6 rounded-full">
-                            <span className="flex items-center justify-center w-full h-full font-medium text-white bg-function-wt-sub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
-                                    <rect width="256" height="256" fill="none"></rect>
-                                    <circle cx="128" cy="96" r="64" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="16"></circle>
-                                    <path d="M31,216a112,112,0,0,1,194,0" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
-                                </svg>
+                    <div className="group relative">
+                        <button type="button" id="profile-menu-button" aria-haspopup="menu" data-state="closed" aria-label="User Menu" className="rdx-state-open:bg-slate-300 flex items-center rounded-full px-1 py-1 cursor-pointer outline-none min-w-max transition hover:bg-slate-300 focus:bg-slate-300 duration-300 select-none sm:flex focus:outline-none focus-visible:ring-2 focus-visible:ring-action-soft">
+                            <span className="inline-flex items-center justify-center overflow-hidden align-middle select-none w-6 h-6 rounded-full bg-[#187710]">
+                                <span className="flex items-center justify-center w-full h-full font-medium text-white bg-function-wt-sub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <circle cx="128" cy="96" r="64" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="16"></circle>
+                                        <path d="M31,216a112,112,0,0,1,194,0" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></path>
+                                    </svg>
+                                </span>
                             </span>
-                        </span>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" className="text-dark-soft ml-1">
-                        <rect width="256" height="256" fill="none"></rect>
-                        <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></polyline>
-                        </svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" className="text-dark-soft ml-1">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <polyline points="208 96 128 176 48 96" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></polyline>
+                            </svg>
                         </button>
-                    <div data-state="closed" className="sm:hidden"><button type="button" aria-controls="radix-:rak:" aria-expanded="false" data-state="closed" className="hamburger" aria-label="Open Menu"><span className="lettuce"></span></button>
+                        <div className="pt-1 absolute -left-[350%] cursor-pointer w-auto">
+                            <div className="dd-fadein-down w-60 bg-white border-[1px] border-black shadow-sm rounded-md hidden z-1 group-hover:flex text-sm">
+                                <div className="w-full flex flex-col">
+                                    <a href="/" className="select-none text-black p-2 items-center transition hover:bg-gray-500 hover:text-white focus:bg-gray-500 outline-none leading-none">
+                                        Accounts & Funding
+                                    </a>
+                                    <a href="/" className="select-none text-black p-2 items-center transition hover:bg-gray-500 hover:text-white focus:bg-gray-500 outline-none leading-none">
+                                        What is new
+                                    </a>
+                                    <a href="/" className="select-none text-black p-2 items-center transition hover:bg-gray-500 hover:text-white focus:bg-gray-500 outline-none leading-none">
+                                        Learn
+                                    </a>
+                                    <a href="/" className="select-none text-black p-2 items-center transition hover:bg-gray-500 hover:text-white focus:bg-gray-500 outline-none leading-none">
+                                        Support
+                                    </a>
+                                    <a href="/" className="select-none text-black p-2 items-center transition hover:bg-gray-500 hover:text-white focus:bg-gray-500 outline-none leading-none">
+                                        Feedback
+                                    </a>
+                                    <a href="/" className="select-none text-black p-2 items-center transition hover:bg-gray-500 hover:text-white focus:bg-gray-500 outline-none leading-none">
+                                        Logout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-state="closed" className="sm:hidden">
+                        <button type="button" aria-controls="radix-:rak:" aria-expanded="false" data-state="closed" className="hamburger" aria-label="Open Menu">
+                            <span className="lettuce"></span>
+                        </button>
                         <div data-state="closed" id="radix-:rak:" hidden="" className="sm:hidden w-full absolute mt-1 left-0 right-0 overflow-y-scroll h-0" style={{transition: "1s ease-in, background 0.3s ease-in"}}></div>
                     </div>
                 </div>
